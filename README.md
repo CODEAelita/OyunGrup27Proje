@@ -3,7 +3,7 @@
 ![Ekran görüntüsü 2025-05-05 225304](https://github.com/user-attachments/assets/139c349c-3fd0-4097-9203-a632a49c7ff7)
 
 
-BEYONSELF'E HOŞ GELDİNİZ
+_________________________________BEYONSELF'E HOŞ GELDİNİZ_____________________________________________________________
 
 Oyunumuz, geçmişinin gölgesinde yaşayan Mert’in, doğum gününden önce paralel evrenlerde çıktığı içsel yolculuğu konu alır.
 Her evren, onun iç dünyasındaki bir kırılmayı simgeler. Oyuncu, Mert’in odasındaki belirli nesnelere tıklayarak bu evrenlere geçer ve gerçek hayattaki sorunların simgesel karşılıklarıyla yüzleştiği mücadelelerde ona eşlik eder.
@@ -32,15 +32,19 @@ Bir diğer geliştirilmesi gerektiğini düşündüğümüz yönler ise karakter
 Oyunumuzun kontrolleri:
 _______________________________________________
  Ara sahneler: Sol click                      
+![images-removebg-preview](https://github.com/user-attachments/assets/1e9e3397-7968-48ae-84c0-d9a018ffac6c)
 
 
  Maze bölümü: WASD, ←↑↓→, Sol click           
  ![images-removebg-preview_360](https://github.com/user-attachments/assets/635ede0b-0f67-4426-b572-c174b9028046)
 
  Runner bölümü: Space, Sol click              
-
+![download-removebg-preview (1)](https://github.com/user-attachments/assets/4ae71b7b-db7a-41c3-85c0-ce801256b41d)      ![images-removebg-preview](https://github.com/user-attachments/assets/1e9e3397-7968-48ae-84c0-d9a018ffac6c)
 
  Boss bölümü: A, D, Space, Sol click      
- ![images-removebg-preview_360](https://github.com/user-attachments/assets/666d7446-c3bd-48ac-b341-1e9f459d2cf4)
+![images-removebg-preview_360](https://github.com/user-attachments/assets/230a1253-e4aa-4cde-8783-cc27d4149308)       ![images-removebg-preview_360 (1)](https://github.com/user-attachments/assets/6ea62fac-c131-4186-a937-08aad8ff672f)
+![download-removebg-preview (1)](https://github.com/user-attachments/assets/9d0998be-aeb6-4226-a6e3-33516255931c)     ![images-removebg-preview](https://github.com/user-attachments/assets/1e9e3397-7968-48ae-84c0-d9a018ffac6c)
+
+
 
 _____________________________________________
