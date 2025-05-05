@@ -32,11 +32,13 @@ Bir diğer geliştirilmesi gerektiğini düşündüğümüz yönler ise karakter
 Oyunumuzun kontrolleri:
 _______________________________________________
  Ara sahneler: Sol click                      
-![images-removebg-preview](https://github.com/user-attachments/assets/1e9e3397-7968-48ae-84c0-d9a018ffac6c)
+![images-removebg-preview](https://github.com/user-attachments/assets/1e9e3397-7968-48ae-84c0-d9a018ffac6c)            
 
 
  Maze bölümü: WASD, ←↑↓→, Sol click           
- ![images-removebg-preview_360](https://github.com/user-attachments/assets/635ede0b-0f67-4426-b572-c174b9028046)
+ ![images-removebg-preview_360](https://github.com/user-attachments/assets/635ede0b-0f67-4426-b572-c174b9028046)       ![download_360-removebg-preview](https://github.com/user-attachments/assets/406d9afd-7b2b-4e5e-aa17-39654ce8c2d5)   
+   
+![images-removebg-preview](https://github.com/user-attachments/assets/1e9e3397-7968-48ae-84c0-d9a018ffac6c)     
 
  Runner bölümü: Space, Sol click              
 ![download-removebg-preview (1)](https://github.com/user-attachments/assets/4ae71b7b-db7a-41c3-85c0-ce801256b41d)      ![images-removebg-preview](https://github.com/user-attachments/assets/1e9e3397-7968-48ae-84c0-d9a018ffac6c)
