@@ -5,6 +5,16 @@
 
 _________________________________BEYONSELF'E HOŞ GELDİNİZ_____________________________________________________________
 
+Main Menüyü seçerek oyuna başlayabilirsiniz. 
+1.Sahne: Main Menü
+2.Sahne: Oda
+3.Sahne: Maze
+4.Sahne: Oda1
+5.Sahne: Runner
+6.Sahne: Oda2
+7.Sahne: Boss
+8.Sahne: Bitiş
+
 Oyunumuz, geçmişinin gölgesinde yaşayan Mert’in, doğum gününden önce paralel evrenlerde çıktığı içsel yolculuğu konu alır.
 Her evren, onun iç dünyasındaki bir kırılmayı simgeler. Oyuncu, Mert’in odasındaki belirli nesnelere tıklayarak bu evrenlere geçer ve gerçek hayattaki sorunların simgesel karşılıklarıyla yüzleştiği mücadelelerde ona eşlik eder.
 ____________________________________________________________________________________________________________________________________________________________________________________________________________________
