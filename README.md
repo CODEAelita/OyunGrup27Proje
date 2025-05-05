@@ -3,7 +3,7 @@
 ![Ekran görüntüsü 2025-05-05 225304](https://github.com/user-attachments/assets/139c349c-3fd0-4097-9203-a632a49c7ff7)
 
 
-BEYONDSELF'E HOŞ GELDİNİZ
+BEYONSELF'E HOŞ GELDİNİZ
 
 Oyunumuz, geçmişinin gölgesinde yaşayan Mert’in, doğum gününden önce paralel evrenlerde çıktığı içsel yolculuğu konu alır.
 Her evren, onun iç dünyasındaki bir kırılmayı simgeler. Oyuncu, Mert’in odasındaki belirli nesnelere tıklayarak bu evrenlere geçer ve gerçek hayattaki sorunların simgesel karşılıklarıyla yüzleştiği mücadelelerde ona eşlik eder.
