@@ -6,28 +6,28 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Sude/Main menu.unity
+    path: Assets/Scenes/Main menu.unity
     guid: 8bec08b2b3360b646aba9cf87081cced
   - enabled: 1
-    path: Assets/Hasan/Scenes/Oda.unity
+    path: Assets/Scenes/Oda.unity
     guid: 2cbcc4804882ee044ba8e6eab5e997c5
   - enabled: 1
-    path: Assets/Hasan/Scenes/Maze.unity
+    path: Assets/Scenes/Maze.unity
     guid: 2551d6ca7ad6df240b320e8081ea11d1
   - enabled: 1
-    path: Assets/Hasan/Scenes/Oda1.unity
+    path: Assets/Scenes/Oda1.unity
     guid: 75086ee8a835ea64d83c094a19795942
   - enabled: 1
-    path: Assets/Eren/Scenes/RunnerScientist.unity
+    path: Assets/Scenes/RunnerScientist.unity
     guid: fbd2e444a416c7b47b7195d6de79cca3
   - enabled: 1
-    path: Assets/Hasan/Scenes/Oda2.unity
+    path: Assets/Scenes/Oda2.unity
     guid: ca51f409fb10aa44a9bbd0700040260c
   - enabled: 1
     path: Assets/tuna/Scenes/BossScene.unity
     guid: da919a860564ed444987ee4137967bb8
   - enabled: 1
-    path: Assets/Hasan/Scenes/EndScene.unity
+    path: Assets/Scenes/EndScene.unity
     guid: d549c7300f757b64fa71d85a3ae0acd3
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

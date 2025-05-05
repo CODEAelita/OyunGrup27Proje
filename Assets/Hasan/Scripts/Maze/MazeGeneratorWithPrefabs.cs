@@ -8,7 +8,6 @@ public class MazeGeneratorWithPrefabs : MonoBehaviour
     public int height = 51;
     public GameObject wallPrefab;
     public GameObject floorPrefab;
-    //public GameObject playerPrefab;
 
     private bool[,] maze;
 
@@ -17,8 +16,13 @@ public class MazeGeneratorWithPrefabs : MonoBehaviour
     [Range(0f, 1f)] public float cosmeticChance = 0.1f;
     #endregion
 
-    private List<GameObject> walls = new List<GameObject>();  
-    private bool startBlinkAndMove = false; 
+    private List<GameObject> walls = new List<GameObject>();
+    private bool startBlinkAndMove = false;
+
+    private int phase = 1;
+    private float blinkDuration = 0.5f;
+    private float blinkInterval = 0.05f;
+    private float moveFrequency = 0.1f;
 
     void Start()
     {
@@ -112,7 +116,6 @@ public class MazeGeneratorWithPrefabs : MonoBehaviour
         }
     }
 
-
     IEnumerator WallBlinkAndMove()
     {
         while (startBlinkAndMove)
@@ -122,15 +125,23 @@ public class MazeGeneratorWithPrefabs : MonoBehaviour
                 GameObject wall = walls[Random.Range(0, walls.Count)];
                 Renderer wallRenderer = wall.GetComponent<Renderer>();
 
-                float blinkDuration = 0.5f;
-                float blinkInterval = 0.05f;
+                float currentBlinkDuration = blinkDuration;
+                float currentBlinkInterval = blinkInterval;
+                float currentMoveFrequency = moveFrequency;
 
-                for (float t = 0; t < blinkDuration; t += blinkInterval)
+                if (phase >= 2)
+                {
+                    currentBlinkDuration = 0.25f; 
+                    currentBlinkInterval = 0.03f; 
+                    currentMoveFrequency = 0.05f; 
+                }
+
+                for (float t = 0; t < currentBlinkDuration; t += currentBlinkInterval)
                 {
                     wallRenderer.material.color = Color.red;
-                    yield return new WaitForSeconds(blinkInterval);
+                    yield return new WaitForSeconds(currentBlinkInterval);
                     wallRenderer.material.color = Color.white;
-                    yield return new WaitForSeconds(blinkInterval);
+                    yield return new WaitForSeconds(currentBlinkInterval);
                 }
 
                 Vector3 direction = Vector3.zero;
@@ -146,20 +157,21 @@ public class MazeGeneratorWithPrefabs : MonoBehaviour
 
                 wall.transform.position += direction;
 
-                float moveFrequency = 0.1f; 
-                yield return new WaitForSeconds(moveFrequency);
+                yield return new WaitForSeconds(currentMoveFrequency);
             }
 
-            yield return new WaitForSeconds(0.5f);  
+            yield return new WaitForSeconds(0.5f);
         }
     }
 
-
-
-    public void StartBlinkAndMove() 
+    public void StartBlinkAndMove()
     {
-        startBlinkAndMove = true; 
-        StartCoroutine(WallBlinkAndMove());  
+        startBlinkAndMove = true;
+        StartCoroutine(WallBlinkAndMove());
     }
 
+    public void ProgressPhase()
+    {
+        phase++;
+    }
 }
