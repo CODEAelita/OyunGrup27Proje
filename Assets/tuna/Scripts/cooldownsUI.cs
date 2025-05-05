@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class cooldownsUI : MonoBehaviour
 {
+    [SerializeField]private characterController characterController;
     private characterStats characterStats;
     [SerializeField]private Image dashImage;
     private bool isCooling = false;
@@ -18,9 +19,12 @@ public class cooldownsUI : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W) && !isCooling)
+        if (Input.GetKeyDown(KeyCode.Space) && !isCooling)
         {
-            StartCoroutine(wait());
+            if(characterController.moveDirection != 0.0f)
+            {
+                StartCoroutine(wait());
+            }
         }
     }
 

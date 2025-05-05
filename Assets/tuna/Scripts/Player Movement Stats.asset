@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Player Movement Stats
   m_EditorClassIdentifier: 
   walkSpeed: 4
-  dashingPower: 12
+  dashingPower: 13
   dashingTime: 0.2
   dashingCoolDown: 1

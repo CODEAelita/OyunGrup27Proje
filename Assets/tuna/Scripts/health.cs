@@ -9,6 +9,8 @@ public class health : MonoBehaviour
     private Color currentColor;
     private Color targetColor = Color.red;
 
+    //private Collider2D targetCollider;
+
     [Range(0f, 1f)]
     [SerializeField] private float redStep = 0.1f;
 
@@ -33,18 +35,19 @@ public class health : MonoBehaviour
         {
             Animator.SetTrigger("isTakeDamage");
         }
-        if (healthAmount == 0f)
+        if (healthAmount <= 0f)
         {
             Debug.Log("öldü");
             if (gameObject.CompareTag("Player"))
             {
-                Animator.SetTrigger("isDeath");
+                Animator.SetBool("isDie",true);
+                Invoke("DisableCollider", 2f); 
             }
             else
             {
                 Animator.SetBool("isDeath", true);
+                Invoke("DisableCollider", 3f);
             }
-            //gameObject.SetActive(false);
         }
     }
 
@@ -52,5 +55,11 @@ public class health : MonoBehaviour
     {
         if (CompareTag("Player"))
            Animator.SetBool("isTakeDamage", false);
+    }
+
+    public void DisableCollider()
+    {
+            gameObject.GetComponent<Collider2D>().enabled = false;   
+            gameObject.GetComponent<characterController>().enabled = false;
     }
 }

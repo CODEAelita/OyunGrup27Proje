@@ -114,7 +114,7 @@ public class MazeGeneratorWithPrefabs : MonoBehaviour
         Instantiate(playerPrefab, new Vector3(1, 1, 0), Quaternion.identity);
     }
 
-    
+
     IEnumerator WallBlinkAndMove()
     {
         while (startBlinkAndMove)
@@ -125,7 +125,7 @@ public class MazeGeneratorWithPrefabs : MonoBehaviour
                 Renderer wallRenderer = wall.GetComponent<Renderer>();
 
                 float blinkDuration = 0.5f;
-                float blinkInterval = 0.1f;
+                float blinkInterval = 0.05f;
 
                 for (float t = 0; t < blinkDuration; t += blinkInterval)
                 {
@@ -136,24 +136,27 @@ public class MazeGeneratorWithPrefabs : MonoBehaviour
                 }
 
                 Vector3 direction = Vector3.zero;
-                int moveDirection = Random.Range(0, 4); 
+                int moveDirection = Random.Range(0, 4);
 
                 switch (moveDirection)
                 {
-                    case 0: direction = Vector3.up; break;    
-                    case 1: direction = Vector3.down; break;  
-                    case 2: direction = Vector3.left; break;  
+                    case 0: direction = Vector3.up; break;
+                    case 1: direction = Vector3.down; break;
+                    case 2: direction = Vector3.left; break;
                     case 3: direction = Vector3.right; break;
                 }
 
                 wall.transform.position += direction;
 
-                yield return new WaitForSeconds(1f);
+                float moveFrequency = 0.1f; 
+                yield return new WaitForSeconds(moveFrequency);
             }
 
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(0.5f);  
         }
     }
+
+
 
     public void StartBlinkAndMove() 
     {

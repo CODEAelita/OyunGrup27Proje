@@ -7,7 +7,7 @@ public class characterController : MonoBehaviour
     //Stats
     public characterStats characterStats;
     //Moving
-    [SerializeField] private float moveDirection;
+    [SerializeField] public float moveDirection;
     private Rigidbody2D characterRb;
     private SpriteRenderer characterRen;
     //Dashing
@@ -86,7 +86,7 @@ public class characterController : MonoBehaviour
         }
 
         //Dash
-        if (Input.GetKeyDown(KeyCode.W) && canDash)
+        if (Input.GetKeyDown(KeyCode.Space) && canDash)
         {
             StartCoroutine(Dash());
             Debug.Log("bastý");
@@ -115,16 +115,21 @@ public class characterController : MonoBehaviour
         float originalGravity = characterRb.gravityScale;
         characterRb.gravityScale = 0f;
         characterRb.linearVelocity = new Vector2(characterStats.dashingPower * moveDirection, characterRb.linearVelocity.y);
-        characterCollider.enabled = false;
-        //if(characterAnimator.set)
-        characterAnimator.Play(Animator.StringToHash("bossCharacterDashAnim"));
+        if(moveDirection != 0.0f)
+        {
+            characterCollider.enabled = false;
+        }
+        if (characterRb.linearVelocity != Vector2.zero)
+        {
+            characterAnimator.Play(Animator.StringToHash("bossCharacterDashAnim"));
+        }
         characterTrailRen.emitting = true;
         yield return new WaitForSeconds(characterStats.dashingTime);
         characterTrailRen.emitting = false;
         characterRb.gravityScale = originalGravity;
         isDashing = false;
-        characterCollider.enabled = true;
         yield return new WaitForSeconds(characterStats.dashingCoolDown);
+        characterCollider.enabled = true;
         canDash = true;
     }
     public void endAttack()

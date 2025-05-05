@@ -18,6 +18,8 @@ public class CharacterController : MonoBehaviour
     private bool jumping;
     private Scene scene;
 
+    [SerializeField] GameObject endGameText;
+
     private void Awake()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
@@ -89,7 +91,11 @@ public class CharacterController : MonoBehaviour
     }
     public void resetTransform()
     {
-        this.gameObject.transform.position = new Vector3(-5.78f, -2.38f, 0);
+        SceneManager.LoadScene(scene.name);
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+       endGameText.SetActive(true);
+    }
 }
