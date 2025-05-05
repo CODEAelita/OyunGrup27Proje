@@ -8,7 +8,8 @@ public class TypewriterManager : MonoBehaviour
     {
         Mert,
         Narrator,
-        Sedat
+        Sedat,
+        Yaratik
     }
 
     [Header("UI Elements")]

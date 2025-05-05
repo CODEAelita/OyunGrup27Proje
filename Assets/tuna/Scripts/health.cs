@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class health : MonoBehaviour
 {
@@ -40,16 +41,20 @@ public class health : MonoBehaviour
             Debug.Log("öldü");
             if (gameObject.CompareTag("Player"))
             {
+                SceneManager.LoadScene("BossScene");
                 Animator.SetBool("isDie",true);
                 Invoke("DisableCollider", 2f); 
             }
             else
             {
+                Invoke("endScene",3);
                 Animator.SetBool("isDeath", true);
                 Invoke("DisableCollider", 3f);
             }
         }
     }
+
+    public void endScene() { SceneManager.LoadScene("EndScene"); }
 
     public void EndTakeDamageAnim()
     {

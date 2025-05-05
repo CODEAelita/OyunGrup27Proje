@@ -1379,6 +1379,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 613251026}
     - target: {fileID: 8220569204506839305, guid: 013566606030ff04082788c8e3d6ce18, type: 3}
+      propertyPath: typingSpeed
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8220569204506839305, guid: 013566606030ff04082788c8e3d6ce18, type: 3}
       propertyPath: lines.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -1578,6 +1582,10 @@ PrefabInstance:
       propertyPath: speakerUI
       value: 
       objectReference: {fileID: 613251026}
+    - target: {fileID: 8220569204506839305, guid: 013566606030ff04082788c8e3d6ce18, type: 3}
+      propertyPath: typingSpeed
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 8220569204506839305, guid: 013566606030ff04082788c8e3d6ce18, type: 3}
       propertyPath: selectedSpeaker
       value: 0

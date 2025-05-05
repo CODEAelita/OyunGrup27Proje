@@ -8,7 +8,7 @@ public class MazeGeneratorWithPrefabs : MonoBehaviour
     public int height = 51;
     public GameObject wallPrefab;
     public GameObject floorPrefab;
-    public GameObject playerPrefab;
+    //public GameObject playerPrefab;
 
     private bool[,] maze;
 
@@ -110,8 +110,6 @@ public class MazeGeneratorWithPrefabs : MonoBehaviour
                 }
             }
         }
-
-        Instantiate(playerPrefab, new Vector3(1, 1, 0), Quaternion.identity);
     }
 
 
