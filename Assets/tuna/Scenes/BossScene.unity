@@ -1528,9 +1528,17 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3033976373654303320, guid: 4bdea194729bd9048a6d16da5ece0c65, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3033976373654303320, guid: 4bdea194729bd9048a6d16da5ece0c65, type: 3}
       propertyPath: m_SortingLayerID
       value: -1216543939
       objectReference: {fileID: 0}
+    - target: {fileID: 3033976373654303320, guid: 4bdea194729bd9048a6d16da5ece0c65, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 5962065634575753971, guid: 4bdea194729bd9048a6d16da5ece0c65, type: 3}
       propertyPath: m_Radius
       value: 0.091869354
